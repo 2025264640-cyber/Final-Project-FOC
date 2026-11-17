@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: linear-gradient(
+			to bottom right, 
+			#0E0E34,
+			#252E8A,
+			#9A4D87,
+			#5A7FC8,
+			#F7F6F7
+			);
+
+        }
+
+        
+        header {
+            background-color: #0E0E34;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        nav {
+            background-color: #252E8A ;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+			
+        }
+
+        nav a:hover {
+            background-color: #9A4D87;
+			color: white;
+			font-size: 15px;
+			padding: 12px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+     
+       
+        }
+
+        
+        aside {
+            flex: 1;
+            background-color: #DECACA ;
+			color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+            }
+			
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BMI CALCULATOR</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <a href="Course.html">Course</a>
+        <a href="Project 1 NOT GATED.html">Projects</a>
+        <a href="concepts.html">concepts</a>
+        <a href="Data Base.html">Data Base</a>
+		<a href="Documentations.html">Documentations</a>
+		<A href="About Me.html">About Me</a>
+    </nav>
+
+    <div class="container">
+         <header>
+        <h1>BMI CALCULATOR</h1>
+        <p></p>
+    </header>
+	
+	<h4> Body Mass Index (BMI) is a screening tool that estimates body fat based on a person's height and weight.</h4>
+
+<h4>How to Calculate BMI</h4>
+
+    <label for="weight">Weight (lbs):</label><br>
+    <input type="number" id="weight" placeholder="Enter weight" step="40"><br>
+
+    <label for="height">Height (inches):</label><br>
+    <input type="number" id="height" placeholder="Enter height" step="20"><br>
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value);
+            const resultDiv = document.getElementById("result");
+
+            if (isNaN(weight) || weight <= 0) {
+                resultDiv.textContent = "Please enter a valid weight in pounds.";
+                return;
+            }
+            if (isNaN(height) || height <= 0) {
+                resultDiv.textContent = "Please enter a valid height in inches.";
+                return;
+            }
+
+            const bmi = (weight * 703) / (height * height);
+
+            let category;
+            if (bmi < 18.5)
+			{
+                category = "Underweight";
+            } 
+			else if (bmi < 24.9)
+			{
+                category = "Normal weight";
+            } 
+			else if (bmi < 29.9)
+			{
+                category = "Overweight";
+            } 
+			else
+			{
+                category = "Obese";
+            }
+
+            resultDiv.textContent = `Your BMI is ${bmi.toFixed(2)} (${category}).`;
+        }
+    
+	
+</script>
+
+
+          <aside>
+            <h3 style="color:black;">Contact Info.</h3>
+            <p style="color:black;">
+                Email: 2025264640@ub.edu.bz <br>
+                Contact Phone Number # +501 601-****
+            </p>
+ <pre> 
+	<a href="Project 1 NOT GATED.html">NOT GATED</a>
+        <a href="Project 2 AND GATE.html">AND GATED</a>
+        <a href="Project 3 OR GATE.html">OR GATE</a>
+        <a href="Project 4 NAND GATE.html">NAND GATE</a>
+        <a href="Project 5 XOR GATE.html">XOR GATE</a>
+	<a href="Java script code.html"> CODES</a>
+	<a href="BMI CALCULATOR.html"> BMI CALCULATOR</a>
+        </aside>
+    </div>
+
+
+
+</body>
+</html>

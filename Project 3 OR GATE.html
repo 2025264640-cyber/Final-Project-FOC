@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: linear-gradient(
+			to bottom right, 
+			#0E0E34,
+			#252E8A,
+			#9A4D87,
+			#5A7FC8,
+			#F7F6F7
+			);
+
+        }
+
+        
+        header {
+            background-color: #0E0E34;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        nav {
+            background-color: #252E8A ;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+			
+        }
+
+        nav a:hover {
+            background-color: #9A4D87;
+			color: white;
+			font-size: 15px;
+			padding: 12px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        
+        main {
+            flex: 3;
+            background-color: #DECACA ;
+			color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        
+        aside {
+            flex: 1;
+            background-color: #DECACA ;
+			color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        
+        footer {
+            background-color: #0E0E34;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <header>
+        <h1>Projects</h1>
+        <p>OR GATE</p>
+    </header>
+
+    <nav>
+        <a href="Course.html">Course</a>
+        <a href="Project 1 NOT GATED.html">Projects</a>
+        <a href="concepts.html">concepts</a>
+        <a href="Data Base.html">Data Base</a>
+		<a href="Documentations.html">Documentations</a>
+		<A href="About Me.html">About Me</a>
+		
+    </nav>
+	
+	  <div class="container">
+        <main>
+		
+            <h4 style="color:black;">
+                The OR gate outputs 1 if any of the N inputs are 1. Thus, it only outputs ‘0’ when all inputs are 0.
+            </h4>
+            
+            <p>
+                <button style="width: 100px; height: 40px;" onclick="document.getElementById('myImage').src='OR GATE.PNG'">0 AND 0</button>
+            </p>
+            <p>
+                <button style="width: 100px; height: 40px;" onclick="document.getElementById('myImage').src='OR GATE B1.PNG'">0 AND 1</button>
+            </p>
+            <p>
+                <button style="width: 100px; height: 40px;" onclick="document.getElementById('myImage').src='OR A1.PNG'">1 AND 0</button>
+            </p>
+            <p>
+                <button style="width: 100px; height: 40px;" onclick="document.getElementById('myImage').src='OR GATE 2.png'">1 AND 1</button>
+            </p>
+
+            <div class="column" style="background-color:#d4baba;">
+                <h2 style="color:black;">OR GATE</h2>
+                <hr>
+                <img id="myImage" src="OR GATE.png" alt="OR GATE.png" width="780" height="287" style="display:block; margin:0 auto;">
+                <p><a href="index.html"></a></p>
+            </div>
+        </main>
+
+        <aside>
+            <h3 style="color:black;">Contact Info.</h3>
+            <p style="color:black;">
+                Email: 2025264640@ub.edu.bz <br>
+                Contact Phone Number # +501 601-****
+            </p>
+ <pre> 
+	<a href="Project 1 NOT GATED.html">NOT GATED</a>
+        <a href="Project 2 AND GATE.html">AND GATED</a>
+        <a href="Project 3 OR GATE.html">OR GATE</a>
+        <a href="Project 4 NAND GATE.html">NAND GATE</a>
+        <a href="Project 5 XOR GATE.html">XOR GATE</a>
+	<a href="Java script code.html"> CODES</a>
+	<a href="BMI CALCULATOR.html"> BMI CALCULATOR</a>
+</pre>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Created By <strong>Arnoldo Muschamp</strong></p>
+    </footer>
+
+</body>
+</html>
